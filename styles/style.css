@@ -66,7 +66,7 @@ nav > ul{
   margin: auto 120px;
   margin-bottom: 45px;
 }
-/* bl;og styles css */
+/* blog styles css */
 .blog-section{
 display: flex;
 justify-content: center;
@@ -108,4 +108,213 @@ margin: 85px 100px;
 .color-black{
   color: #131313;
   font-weight: 700;
+}
+/* content styless */
+.feature-section{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 85px 100px;
+}
+.feature-blog{
+  margin-left: 20px;
+}
+.feature-image img{
+  width: 450px;
+  height: 800px;
+}
+.feature-title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: #131313;
+  border-left: 2px solid #eb8736;
+  margin-bottom: 10px;
+}
+.feature-description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+.blogs-section{
+  margin-top: 10px ;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blogs-section-title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.blogs-section-description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+.image-button{
+ background-color: #eb8736;
+ border: none;
+ padding: 10px;
+ border-radius: 5px;
+}
+.image-button > h1{
+  font-weight: 700;
+  font-size: 30px;
+  /* line-height: 70px; */
+  text-align: center;
+  color: #FFFFFF;
+}
+.image-button > p{
+  font-weight: 500;
+font-size: 20px;
+/* line-height: 40px; */
+text-align: center;
+color: #FFFFFF;
+}
+/* some facts section styles */
+.about-section{
+margin-top: 100px;
+margin-left: 100px;
+}
+.about-section-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 53px;
+  color: #131313;
+}
+.about-section-description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+/* project details styles */
+.project-details{
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 100px;
+  margin: 100px ;
+}
+.project-blog{
+  border: 1px solid #FF900E;
+border-radius: 5px;
+padding: 45px 35px 50px 35px;
+text-align: center;
+}
+.project-blog-title{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 53px;
+  color: #424242;
+}
+.project-blog-description{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #727272;
+}
+/* sponsor ssection styles */
+.sponsor-section{
+  text-align: center;
+}
+.sponsor-section-title{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 53px;
+  color: #424242;
+}
+.sponsor-section-description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+}
+/* logo styles */
+.logo-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1110px;
+  margin: 30px 160px;
+  padding: 35px 60px;
+}
+/* footer styles */
+.footer-class{
+  border: 1px solid gray;
+  text-align: center;
+  margin: 30px 300px;
+  padding: 30px 100px ;
+  background: #ffffff;
+border-radius: 8px;
+ border: none;
+}
+/* mobile responsive section */
+@media only screen and (max-width:576px) {
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-image img{
+    max-width: 90%;
+    margin: auto;
+    margin-left: 30px;
+  }
+  .blog-section{
+    flex-direction: column-reverse;
+    
+  }
+  .blog-section .blog-content{
+    padding: 10px;
+    background-color:#faf2e5;
+  }
+  .blog-section .blog-image img{
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color:#faf2e5;
+    max-width: 100%;
+  }
+  .feature-section{
+    flex-direction: column;
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #faf2e5;
+  }
+  .feature-image img{
+    max-width: 100%;
+  }
+  .project-details{
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .image-button{
+    margin-top: 50px;
+  }
+  .logo-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+  .footer-class{
+    /* padding: 30px 9px; */
+    background: #faf2e5;
+    border-radius: 8px;
+    border: none;
+    margin: 0px;
+    font-size: 20px;
+  }
+  .sponsor-section{
+    max-width: 100%;
+    margin: 0 10px;
+  }
 }
